@@ -1,0 +1,6 @@
+print("Введите имя: ")
+a = str(input())
+print("Введите фамилию: ")
+b = str(input())
+print(a," ", b)
+print(len(a+" "+b))
