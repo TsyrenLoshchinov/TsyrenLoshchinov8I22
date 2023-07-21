@@ -1,4 +1,6 @@
-def find_paths(graph, start, end, path=[]):
+def find_paths(graph, start, end, path=None):
+    if path is None:
+        path = []
     path = path + [start]
     if start == end:
         return [path]
@@ -8,11 +10,12 @@ def find_paths(graph, start, end, path=[]):
     for node in graph[start]:
         if node not in path:
             new_paths = find_paths(graph, node, end, path)
-            for p in new_paths:
-                paths.append(p)
+            for m in new_paths:
+                paths.append(m)
     return paths
 
-graph = {
+
+g = {
  'A': ['B', 'C'],
  'B': ['D', 'E'],
  'C': ['F'],
@@ -20,8 +23,8 @@ graph = {
  'E': ['F'],
  'F': []
 }
-start = 'A'
-end = 'F'
+s = 'A'
+e = 'F'
 
-paths = find_paths(graph, start, end)
-print("Все пути от", start, "до", end, ":", paths)
+p = find_paths(g, s, e)
+print("Все пути от", s, "до", e, ":", p)
