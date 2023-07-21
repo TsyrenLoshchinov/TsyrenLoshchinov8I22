@@ -16,12 +16,11 @@ def find_paths(graph, start, end, path=None):
 
 
 g = {
- 'A': ['B', 'C'],
- 'B': ['D', 'E'],
- 'C': ['F'],
- 'D': [],
- 'E': ['F'],
- 'F': []
+    'A': ['B', 'C'],
+    'C': ['F'],
+    'D': [],
+    'E': ['F'],
+    'F': []
 }
 s = 'A'
 e = 'F'
