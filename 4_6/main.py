@@ -10,6 +10,7 @@ def rot13(string):
             result += char
     return result
 
-string = input("Введите строку для кодирования: ")
-encoded_string = rot13(string)
+
+s = input("Введите строку для кодирования: ")
+encoded_string = rot13(s)
 print("Закодированная строка:", encoded_string)
