@@ -1,2 +1,2 @@
-p = {i:i*i*i for i in range(2,11,2)}
+p = {i: i * i * i for i in range(2, 11, 2)}
 print(p)
