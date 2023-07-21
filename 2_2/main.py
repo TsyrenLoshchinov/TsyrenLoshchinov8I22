@@ -1,10 +1,10 @@
-tvshows = ["Мир наизнанку","Орел и решка","Однажды в России","Кондитер"]
-for show in tvshows:
+tv_shows = ["Мир наизнанку", "Орел и решка", "Однажды в России", "Кондитер"]
+for show in tv_shows:
     print(show)
 print("Введите навзвание телепередачи: ")
-newshow = str(input())
+new_show = str(input())
 print("Введите позицию: ")
 position = int(input())
-tvshows.insert(position-1,newshow)
-for show in tvshows:
+tv_shows.insert(position - 1, new_show)
+for show in tv_shows:
     print(show)
