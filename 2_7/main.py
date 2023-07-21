@@ -1,8 +1,8 @@
 print("Введите число")
 a = int(input())
-sum=0
-while a<0:
-    sum+=a
+s = 0
+while a < 0:
+    s += a
     print("Введите число")
     a = int(input())
 print(sum)
