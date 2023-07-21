@@ -16,4 +16,3 @@ for book in books:
         writer.writerow(
             book
         )
-
