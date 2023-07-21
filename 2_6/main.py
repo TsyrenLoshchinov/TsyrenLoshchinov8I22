@@ -5,7 +5,7 @@ b = float(input())
 print("Сколько литров топлива в вашем баке?")
 c = float(input())
 r = c/b
-if r*100>=a:
+if r * 100 >= a:
     print("Проедите")
 else:
     print("Бензина не хватит")
