@@ -1,9 +1,7 @@
 import csv
-
 starting_year = int(input("Введите начальный год: "))
 end_year = int(input("Введите конечный год: "))
-
-with open('books.csv', mode='r',encoding="utf-8-sig",  newline='') as file:
+with open('books.csv', mode='r', encoding="utf-8-sig", newline='') as file:
     reader = csv.reader(file, delimiter=";")
     next(reader)
     if starting_year > end_year:
