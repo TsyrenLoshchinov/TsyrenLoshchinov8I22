@@ -1,11 +1,9 @@
 import csv
-
 count = int(input("Скоько записей хотите добавить? "))
 for i in range(count):
     book = input("Введите название книги: ")
     author = input("Введите имя автора: ")
     year = input("Введите год выпуска: ")
-
     with open("books.csv","a", encoding="utf-8-sig",  newline='') as file:
          writer = csv.writer(file, delimiter=";")
          writer.writerow([book,author,year])
