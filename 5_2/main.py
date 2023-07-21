@@ -4,9 +4,9 @@ for i in range(count):
     book = input("Введите название книги: ")
     author = input("Введите имя автора: ")
     year = input("Введите год выпуска: ")
-    with open("books.csv","a", encoding="utf-8-sig",  newline='') as file:
-         writer = csv.writer(file, delimiter=";")
-         writer.writerow([book,author,year])
+    with open("books.csv", "a", encoding="utf-8-sig", newline='') as file:
+        writer = csv.writer(file, delimiter=";")
+        writer.writerow([book, author, year])
 s_author = input("Введите автора книги: ")
 with open("books.csv", 'r', encoding="utf-8-sig", newline='') as file:
     reader = csv.reader(file, delimiter=";")
