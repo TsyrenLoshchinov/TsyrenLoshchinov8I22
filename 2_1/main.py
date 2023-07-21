@@ -16,7 +16,7 @@ if a == "Белый":
 print("Введите цвет: ")
 k = str(input())
 while k != a:
-    if m//2 == 0:
+    if m // 2 == 0:
         print(b)
     k = str(input())
     m += 1
