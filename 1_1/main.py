@@ -1,3 +1,3 @@
 print("Введите имя:")
 a = str(input())
-print("Длина имени: ",len(a))
+print("Длина имени: ", len(a))
